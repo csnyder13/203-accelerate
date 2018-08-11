@@ -96,11 +96,33 @@ div.case-study-images img {
 
 /* Homepage Case Study Styles */
 
+section.featured-work div h4 {
+	text-align: center;
+	text-transform: uppercase;
+	margin: 0 0 2em;
+}
+
 div.site-content ul {
 	list-style: none;
 }
 
 div.site-content ul li {
 	display: inline-block;
+	margin: 26px 36px 0 0;
+	width: 264px;
+}
+
+.individual-featured-work h3{
+	text-align: center;
+	font: 600 1em/1.75 'Open Sans', Arial, sans-serif;
+	font-size: 16.5px;
+    color: #000;
+}
+
+/* Case Studies Archive Styles */
+
+div.case-study-images img {
+	width: 100%;
+	height: auto;
 }
 
