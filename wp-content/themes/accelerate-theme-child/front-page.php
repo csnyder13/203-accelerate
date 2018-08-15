@@ -54,6 +54,18 @@ get_header(); ?>
   					<?php endwhile; ?> 
 				<?php wp_reset_query(); ?>
  			</div>    
- 		</div>
+		 </div>
 	</section>
+	<section>
+		<div class="tweet">
+			<h4>Recent Tweet</h4>
+		</div>		
+		<?php if ( is_active_sidebar( 'sidebar-2' ) ) : ?>
+			<div id="secondary" class="widget-area" role="complementary">		
+				<?php dynamic_sidebar( 'sidebar-2' ); ?>
+				<a class="follow-us-link" href="https://twitter.com/Skillcrush" target="_blank">Follow Us &rsaquo;</a>
+			</div>		
+		<?php endif; ?>		
+	</section>
+
 <?php get_footer(); ?>

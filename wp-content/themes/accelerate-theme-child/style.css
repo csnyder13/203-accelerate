@@ -31,6 +31,7 @@ Text Domain:  accelerate-theme-child
 	width: 50%;
 	float: left;
 	margin-bottom: 2em;
+	padding-right: 3em;
 }
 
 .blog-post h4 {
@@ -50,6 +51,7 @@ Text Domain:  accelerate-theme-child
 	color: #45ac9d;
 	text-transform: uppercase;
 }
+
 /* Case Studies Styles */
 
 article.case-study {
@@ -190,39 +192,28 @@ nav.social-media-navigation li {
 }
 
 .about-content{
-	margin: 0 auto;
+	margin: 0 auto 50px;
 	text-align: center;
 }
 
 .services {
 	width: 942px;
 	height: auto;
-	margin: 0 auto 50px;
+	margin: 68px auto 68px;
+    justify-content: space-between;
 }
 
 .third-width {
 	width: 33%;
-}
-
-.third-width:nthchild(odd) {
 	float: left;
-}
-
-.third-width:nthchild(even) {
-	float: right;
 }
 
 .service-description {
-	width: 66%;
-	height: 216px;
+	height: 220px;
 }
 
-.service-description:nthchild(odd) {
+.services section:nthchild(even) figure {
 	float: right;
-}
-
-.service-description:nthchild(even) {
-	float: left;
 }
 
 .service-description h3 {
@@ -230,6 +221,10 @@ nav.social-media-navigation li {
     font-family: 'Open Sans';
     font-size: 1.5em;
 	font-weight: 600;
+}
+
+.services section:nthchild(even) aside {
+	float: left;
 }
 
 .clearfix::after {
@@ -241,17 +236,34 @@ nav.social-media-navigation li {
 .about-contact {
 	border-top: 1px solid #bfbfbf;
 	width: 942px;
-	height: 170px;
 	margin: 0 auto;
 }
 
-.call-to-action h3 button {
-	float: left;
-	margin: 0;
+.call-to-action {
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	vertical-align: baseline;
 }
 
 .call-to-action h3 {
-    display: inline;
+	float: left;
+    width: 40%;
+    text-transform: none;
+}
+
+.call-to-action input {
+		float: left;
+		margin-top: 30px;
+}
+
+input[type="button"] {
+	font: 700 1em/0 'Montserrat', 'OpenSans', Arial, sans-serif;
+	color: #fff;
+	background: #45ac9d;
+	border: none;
+	padding: 1.5em 3.75em;
+	text-align: center;
 }
 
 /* 404 Styles */
@@ -279,6 +291,54 @@ nav.social-media-navigation li {
 	font-weight: bold;
 }
 
+/* Twitter Feed Styles */
 
-	
+.tweet {
+	width: 50%;
+	float: left;
+	padding-right: 3em;
+}
 
+.tweet h4 {
+	font: 700 1em/1.75 'Montserrat', 'Open Sans', Arial, sans-serif;
+    color: #a6a6a6;
+    text-transform: uppercase;
+    margin: 2em 0 0;
+}
+
+#secondary {
+	width: 471px;
+	float: left;
+	margin-bottom: 2em;
+}
+
+.widget-area ul {
+	list-style: none;
+	margin: 1em 0 2.5em 0;
+}
+
+#secondary h3 {
+    font: 700 1em/1.75 'Montserrat', 'Open Sans', Arial, sans-serif;
+    color: #3b3b3b;
+	margin: 2em 0 .5em;
+	font-size: 1.5em;
+	line-height: 1.75em;
+}
+
+.follow-us-link {
+	font-family: 'Montserrat';
+	font-weight: 700;
+	color: #45ac9d;
+	text-transform: uppercase;
+}
+
+/* Mailchimp Widget Styles */
+
+input[type="submit"] {
+	font: 700 1em/0 'Montserrat', 'OpenSans', Arial, sans-serif;
+	color: #fff;
+	background: #45ac9d;
+	border: none;
+	padding: 1em 3.75em;
+	text-align: center;
+}
