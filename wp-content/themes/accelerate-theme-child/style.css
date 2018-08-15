@@ -172,7 +172,7 @@ nav.social-media-navigation li {
 .about-page {
 	background: url("img/taxi-photo.jpg") no-repeat scroll right center / cover rgba(0, 0, 0, 0);
     height: auto;
-    margin: 0 0 5em;
+
     padding: 8em 0;
 	text-align: center;
 }
@@ -191,9 +191,13 @@ nav.social-media-navigation li {
 	
 }
 
-.about-content{
+.about-content {
 	margin: 0 auto 50px;
 	text-align: center;
+}
+
+.about-content h5 {
+	margin: 0 0 .5em;
 }
 
 .services {
@@ -203,7 +207,7 @@ nav.social-media-navigation li {
     justify-content: space-between;
 }
 
-.third-width {
+.service-image {
 	width: 216px;
 	float: left;
 }
@@ -213,19 +217,19 @@ nav.social-media-navigation li {
 	float: right;
 }
 
-.services article:nthchild(even) figure {
-	display: -webkit-flex; /* Safari */
-	-webkit-flex-direction: row-reverse; /* Safari 6.1+ */
-	display: flex;
-	flex-direction: row-reverse;
-	align-items: center;
-}
-
 .service-description h3 {
 	color: #000;
     font-family: 'Open Sans';
     font-size: 1.5em;
 	font-weight: 600;
+}
+
+.services div:nthchild(even) article {
+	display: -webkit-flex; /* Safari */
+	-webkit-flex-direction: row-reverse; /* Safari 6.1+ */
+	display: flex;
+	flex-direction: row-reverse;
+	align-items: center;
 }
 
 .about-contact {
