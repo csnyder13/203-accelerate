@@ -230,7 +230,7 @@ article.services {
     align-items: center;
 }
 
-article.services:nth-child(even) {
+article.services:nth-child(odd) {
 	-webkit-flex-direction: row-reverse; /* Safari 6.1+ */
 	flex-direction: row-reverse;
 }
