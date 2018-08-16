@@ -224,12 +224,15 @@ nav.social-media-navigation li {
 	font-weight: 600;
 }
 
-.services div:nthchild(even) article {
-	display: -webkit-flex; /* Safari */
+article.services {
+    display: -webkit-flex; /* Safari */
+    display: flex;
+    align-items: center;
+}
+
+article.services:nth-child(even) {
 	-webkit-flex-direction: row-reverse; /* Safari 6.1+ */
-	display: flex;
 	flex-direction: row-reverse;
-	align-items: center;
 }
 
 .about-contact {
